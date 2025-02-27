@@ -16,17 +16,17 @@ void main() async {
   await Firebase.initializeApp(
     options: FirebaseOptions(
       // TODO: These will be filled in by you with your Firebase config
-      apiKey: "YOUR_API_KEY",
-      appId: "YOUR_APP_ID",
-      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      projectId: "YOUR_PROJECT_ID",
+      apiKey: "todo",
+      appId: "todo",
+      messagingSenderId: "todo",
+      projectId: "todo",
     ),
   );
 
-  runApp(MyApp());
+  runApp(MyTopFive());
 }
 
-class MyApp extends StatelessWidget {
+class MyTopFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(

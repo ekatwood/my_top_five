@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class TopFiveDisplay extends StatelessWidget {
   final String userId;
 
-  const TopFiveDisplay({Key? key, required this.userId}) : super(key: key);
+  TopFiveDisplay({Key? key, required this.userId}) : super(key: key);
 
   // Default categories
   final List<String> _defaultCategories = [
